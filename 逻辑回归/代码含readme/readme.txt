@@ -1,0 +1,15 @@
+mydata是符合独立性和均值条件的训练集文本
+mytest是符合独立性和均值条件的测试集文本
+mydata_noindependent是不符合独立性但符合均值条件的训练集文本
+mytest_noindependent是不符合独立性但符合均值条件的测试集文本
+mydata_mu是符合独立性却不符合均值条件的训练集文本
+mytest_mu是符合独立性却不符合均值条件的测试集文本
+
+logistic_mydata.py是利用自己生成数据的梯度下降法
+logistic_newton_mydata.py是利用自己生成数据的牛顿法
+logistic_newton_uci.py是利用uci数据集的牛顿法
+logistic_uci.py是利用uci数据集的梯度下降法
+
+我是直接在logistic_mydata.py和logistic_newton_mydata.py里面用的mydata和mytest，执行的结果就是满足条件的结果。
+如果要执行其他文本结果，需要在函数readdata()和函数readtestdata()分别修改训练集和测试集的路径。
+梯度下降可能会很久，可以等一段时间
